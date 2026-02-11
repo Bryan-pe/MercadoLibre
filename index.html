@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head> <!-- encabezado -->
-        <link rel="stylesheet" href="css/stilo.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" href="icons/doodle_cat.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,10 @@
             </div>
 
             <!-- buscador -->
-            <div>
+            <div class="buscador">
                 <form>
                     <input type="text" placeholder="buscar productos">
-                    <button type="submit"></button>
+                    <button type="submit">Buscar</button>
                 </form>
             </div>
 
@@ -42,27 +42,36 @@
         </header>
         <main> <!-- contenido principal -->
             <!-- 1ra seccion-->
-            <div>
-                <h2>Envio gratis</h2>
-                <p>img</p>
-                <p>boton</p>
+            <div class="seccion-cards">
+                <div class="card">
+                    <h3>Envio gratis</h3>
+                    <div class="card-img">
+                        <img src="#" alt="nose">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-txt">beneficio por ser su primera compra</p>
+                        <button>Mostrar mas productos</button>
+                    </div>               
+                </div>
             </div>
 
             <!-- 2da seccion -->
-            <div>
+            <div class="seccion">
                 <h2>Ofertas</h2>
                 <p>img</p>
                 <p>ver mas</p>
             </div>
 
             <!-- 3ra seccion -->
-            <div>
+            <div class="seccion">    
                 <h2>Ofertas del dia</h2>
-                <p>aqui iran los productos destacados</p>
+                <div class="producto">Producto 1</div>
+                <div class="producto">Producto 2</div>
+                <div class="producto">Producto 3</div>
             </div>
 
             <!-- 4ta seccion -->
-            <div>
+            <div class="seccion">
                 <h2>VIVE MERCADO LIBRE COMO UN EXPERTO</h2>
             </div>
         </main>
