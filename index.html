@@ -8,6 +8,7 @@
         <title>Mercado Libre</title>
     </head>
     <body> <!-- cuerpo de la pagina -->
+        <script src="js/jsjs.js"></script>
         <header>
             <div>
                 <h1>mercado libre</h1>
@@ -41,17 +42,63 @@
             </nav>
         </header>
         <main> <!-- contenido principal -->
+            <div class="carrusel">
+                <div class="carrusel-track">
+                    <div class="slide slide1">
+                        <h2>OUTLET DE JUGUETES</h2>
+                    </div>
+                    <div class="slide slide2">
+                        <h2>HASTA 50% DE DESCUENTO</h2>
+                    </div>
+                    <div class="slide slide3">
+                        <h2>ENVIOS RAPIDOS</h2>
+                    </div>
+                </div>
+            </div>
+
             <!-- 1ra seccion-->
             <div class="seccion-cards">
-                <div class="card">
-                    <h3>Envio gratis</h3>
-                    <div class="card-img">
-                        <img src="#" alt="nose">
+                <div class="cards-cont">
+                    <div class="card"> <!-- tarjeta 1 -->
+                        <h3>Envio gratis</h3>
+                        <div class="card-img"><img src="img/doodle_cat.png" alt="nose"></div>
+                        <div class="card-body">
+                            <p>beneficio por ser su primera compra</p>
+                            <button>Mostrar mas productos</button>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-txt">beneficio por ser su primera compra</p>
-                        <button>Mostrar mas productos</button>
-                    </div>               
+                    <div class="card"> <!-- tarjeta 2 -->
+                        <h3>Ingresa a tu cuenta</h3>
+                        <div class="card-img"><img src="img/doodle_cat.png" alt="nose"></div>
+                        <div class="card-body">
+                            <p>Disfruta de ofertas y compra sin limites</p>
+                            <button>Ingresar</button>
+                        </div>
+                    </div>
+                    <div class="card"> <!-- tarjeta 3 -->
+                        <h3>Menos de 500$</h3>
+                        <div class="card-img"><img src="img/doodle_cat.png" alt="nose"></div>
+                        <div class="card-body">
+                            <p>Descubre productos con precios bajos</p>
+                            <button>Ver productos</button>
+                        </div>
+                    </div>
+                    <div class="card"> <!-- tarjeta 4 -->
+                        <h3>Mas vendidos</h3>
+                        <div class="card-img"><img src="img/doodle_cat.png" alt="nose"></div>
+                        <div class="card-body">
+                            <p>Explora los productos que son tendencia</p>
+                            <button id="run">Ir a mas vendidos</button>
+                        </div>
+                    </div>
+                    <div class="card"> <!-- tarjeta 5 -->
+                        <h3>hola</h3>
+                        <div class="card-img"><img src="img/doodle_cat.png" alt="nose"></div>
+                        <div class="card-body">
+                            <p>no lo se solo puse otro</p>
+                            <button onclick="shakescreen()">no tocar!!</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
