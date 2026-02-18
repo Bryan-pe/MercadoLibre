@@ -4,7 +4,3 @@ function shakescreen(){
         document.body.classList.remove("shake");
     }, 400);
 }
-
-const btn =
-document.getElementById("run");
-

@@ -8,7 +8,6 @@
         <title>Mercado Libre</title>
     </head>
     <body> <!-- cuerpo de la pagina -->
-        <script src="js/jsjs.js"></script>
         <header>
             <div>
                 <h1>mercado libre</h1>
@@ -42,7 +41,11 @@
             </nav>
         </header>
         <main> <!-- contenido principal -->
+            <!-- slider -->
             <div class="carrusel">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
                 <div class="carrusel-track">
                     <div class="slide slide1">
                         <h2>OUTLET DE JUGUETES</h2>
@@ -53,6 +56,11 @@
                     <div class="slide slide3">
                         <h2>ENVIOS RAPIDOS</h2>
                     </div>
+                </div>
+                <div class="carrusel-btns">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
                 </div>
             </div>
 
@@ -88,14 +96,14 @@
                         <div class="card-img"><img src="img/doodle_cat.png" alt="nose"></div>
                         <div class="card-body">
                             <p>Explora los productos que son tendencia</p>
-                            <button id="run">Ir a mas vendidos</button>
+                            <button>Ir a mas vendidos</button>
                         </div>
                     </div>
                     <div class="card"> <!-- tarjeta 5 -->
                         <h3>hola</h3>
                         <div class="card-img"><img src="img/doodle_cat.png" alt="nose"></div>
                         <div class="card-body">
-                            <p>no lo se solo puse otro</p>
+                            <p>no lo se, solo puse otro</p>
                             <button onclick="shakescreen()">no tocar!!</button>
                         </div>
                     </div>
@@ -125,5 +133,6 @@
         <footer> <!-- pie de pagina -->
             <p>© 2026 Mercado Libre</p>
         </footer>
+        <script src="js/jsjs.js"></script>
     </body>
 </html>
