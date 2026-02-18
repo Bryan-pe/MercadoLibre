@@ -6,29 +6,93 @@ body {
 
 /* ---------------------- navegador ---------------------- */
 
-header {
+.header {
     background-color: #ffe600;
-    padding: 15px;
+    padding: 10px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 22px;
 }
 
 .buscador {
-    width: 300px;
-    padding: 5px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.buscador form {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+.buscador input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
 }
 
 .buscador button {
-    padding: 5px 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #ebebeb;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 
-nav ul {
+.buscador button:hover {
+    background-color: #dadada;
+}
+
+.user-menu {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.user-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.user-menu a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 10px 0;
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* ---------------------- productos ---------------------- */
