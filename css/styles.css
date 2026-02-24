@@ -97,19 +97,54 @@ body {
 
 /* ---------------------- productos ---------------------- */
 
-.seccion {
-    padding: 20px;
+.prod-section {
+    background-color: #ebebeb;
+    padding: 40px;
 }
 
-.producto {
-    width: 200px;
-    height: 250px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-    line-height: 250px;
+.prod-header h2 {
+    margin-bottom: 20px;
+}
+
+.prod-cont {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.prod-card {
+    background-color: white;
+    width: 220px;
+    padding: 15PX;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.prod-card h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.prod-img {
+    height: 150px;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+.precio span {
+    color: green;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.envio {
+    color: green;
+    font-size: 12px;
 }
 
 .cards-cont {
