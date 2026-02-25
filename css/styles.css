@@ -300,11 +300,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #0fc4c4;
-}
-
-a:hover {
-    color: #1100ff;
+    color: black;
 }
 
 .card-img img{
@@ -314,12 +310,12 @@ a:hover {
 }
 
 @keyframes screenshake {
-    0% {transform: translate(0, 0);}
-    20% {transform: translate(-10px, 5px);}
-    40% {transform: translate(15px, -11px);}
-    60% {transform: translate(-30px, 40px);}
-    80% {transform: translate(10px, -5px);}
-    100% {transform: translate(0, 0);}
+    0% {transform: translate(0, 0) rotate(2deg);}
+    20% {transform: translate(-10px, 5px) rotate(-2deg);}
+    40% {transform: translate(15px, -11px) rotate(3deg);}
+    60% {transform: translate(-30px, 40px) rotate(-3deg);}
+    80% {transform: translate(10px, -5px) rotate(2deg);}
+    100% {transform: translate(0, 0) rotate(0deg);}
 }
 
 .shake {
