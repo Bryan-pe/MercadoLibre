@@ -1,53 +1,289 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head> <!-- encabezado -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="icons/doodle_cat.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mercado Libre</title>
-    </head>
-    <body> <!-- cuerpo de la pagina -->
-        <header class="header">
-            <!-- fila superior -->
-            <div class="header-top">
-                <div class="logo">
-                    <a href="index.html"><h1>Mercado Libre</h1></a>
-                </div>
-                <div class="buscador">
-                    <form>
-                        <input type="text" placeholder="Buscar productos, marcas y mas...">
-                        <button type="submit">Buscar</button>
-                    </form>
-                </div>
-                <div class="user-menu">
-                    <a href="registro.html">Crea tu cuenta</a>
-                    <a href="#">Ingresa</a>
-                    <a href="#">Mis compras</a>
-                    <a href="carrito.html">Carrito</a>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/doodle_cat.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cat_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <!--fila superior-->
+        <div class="header-top">
+            <div class="logos">
+                <a href="index.html"><img src="img/logo.png" alt="logo mercado libre"></a>
             </div>
+            <div class="buscador">
+                <form>
+                    <input type="text" placeholder="Buscar productos, marcas y mas...">
+                    <button type="submit">
+                        <img src="icons/lupa.png" alt="buscador">
+                    </button>
+                </form>
+            </div>
+            <img src="img/meli.png" alt=" logo mercado libre" class="img-banner">
+        </div>
+        <!--barra de navegacion-->
+        <nav class="nav">
+            <ul class="menu-left">
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Cupones</a></li>
+                <li><a href="#">Supermercado</a></li>
+                <li><a href="#">Moda</a></li>
+                <li><a href="#">Mercado Play</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="menu-right">
+                <li><a href="registro.html">Crea tu cuenta</a></li>
+                <li><a href="#"></a>Ingresa</li>
+                <li><a href="#"></a>Mis compras</li>
+                <li>
+                    <a href="carrito.html">
+                        <img src="icons/carrito.png" class="img-carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="catalogo"> 
+            <!--sidebar-->
+            <aside class="filtros">
+                <h3>Samsung galaxy</h3>
+                <p class="resultados">4,334 resultados</p>
+                <div class="filtro">
+                    <span>Llega mañana</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider-cat"></span>
+                    </label>
+                </div>
 
-            <!-- barra de navegacion -->
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Cupones</a></li>
-                    <li><a href="#">Supermercado</a></li>
-                    <li><a href="#">Moda</a></li>
-                    <li><a href="#">Mercado play</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-            </div>
-        </header>
-        <main> <!-- contenido principal -->
-            
-        </main>
-        <footer> <!-- pie de pagina -->
-            <p>© 2026 Mercado Libre</p>
-        </footer>
-        <script src="js/jsjs.js"></script>
-    </body>
+                <div class="filtro">
+                    <span>FULL envio gratis</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider-cat"></span>
+                    </label>
+                </div>
+
+                <div class="filtro">
+                    <span>Internacional</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider-cat"></span>
+                    </label>
+                </div>
+
+                <div class="filtro">
+                    <span>Envio gratis</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider-cat"></span>
+                    </label>
+                </div>
+            </aside>
+
+            <!--contenido-->
+            <section class="contenido-cat">
+                <!--orden-->
+                <div class="orden">
+                    <span>Ordenar por</span>
+                    <select>
+                        <option>Mas relevantes</option>
+                        <option>Menor precio</option>
+                        <option>Mayor precio</option>
+                    </select>
+                </div>
+
+                <!--grid-->
+                <div class="prods-grid-cat">
+                    <div class="prod-cat">
+                        <span class="badge-cat">MAS VENDIDO</span>
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+
+                    <div class="prod-cat">
+                        <img src="img/doodle_cat.png">
+                        <p class="titulo-cat">Samsung galaxy a16 128gb</p>
+                        <p class="precio-anterior-cat">$ 4,949</p>
+                        <p class="precio-cat">
+                            $ 2,329 <span>52% OFF</span>
+                        </p>
+                        <p class="meses-cat">3 meses sin intereses de $ 776.33</p>
+                        <p class="envio-cat">llega gartis mañana <span class="full-cat">FULL</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 Mercado Libre</p>
+    </footer>
+</body>
 </html>

@@ -1,53 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head> <!-- encabezado -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="icons/doodle_cat.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mercado Libre</title>
-    </head>
-    <body> <!-- cuerpo de la pagina -->
-        <header class="header">
-            <!-- fila superior -->
-            <div class="header-top">
-                <div class="logo">
-                    <a href="index.html"><h1>Mercado Libre</h1></a>
-                </div>
-                <div class="buscador">
-                    <form>
-                        <input type="text" placeholder="Buscar productos, marcas y mas...">
-                        <button type="submit">Buscar</button>
-                    </form>
-                </div>
-                <div class="user-menu">
-                    <a href="registro.html">Crea tu cuenta</a>
-                    <a href="#">Ingresa</a>
-                    <a href="#">Mis compras</a>
-                    <a href="carrito.html">Carrito</a>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/doodle_cat.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <!--fila superior-->
+        <div class="header-top">
+            <div class="logos">
+                <a href="index.html"><img src="img/logo.png" alt="logo mercado libre"></a>
             </div>
-
-            <!-- barra de navegacion -->
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Cupones</a></li>
-                    <li><a href="#">Supermercado</a></li>
-                    <li><a href="#">Moda</a></li>
-                    <li><a href="#">Mercado play</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
+            <div class="buscador">
+                <form>
+                    <input type="text" placeholder="Buscar productos, marcas y mas...">
+                    <button type="submit">
+                        <img src="icons/lupa.png" alt="buscador">
+                    </button>
+                </form>
             </div>
-        </header>
-        <main> <!-- contenido principal -->
-            
-        </main>
-        <footer> <!-- pie de pagina -->
-            <p>© 2026 Mercado Libre</p>
-        </footer>
-        <script src="js/jsjs.js"></script>
-    </body>
+            <img src="img/meli.png" alt=" logo mercado libre" class="img-banner">
+        </div>
+        <!--barra de navegacion-->
+        <nav class="nav">
+            <ul class="menu-left">
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Cupones</a></li>
+                <li><a href="#">Supermercado</a></li>
+                <li><a href="#">Moda</a></li>
+                <li><a href="#">Mercado Play</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="menu-right">
+                <li><a href="registro.html">Crea tu cuenta</a></li>
+                <li><a href="#"></a>Ingresa</li>
+                <li><a href="#"></a>Mis compras</li>
+                <li>
+                    <a href="carrito.html">
+                        <img src="icons/carrito.png" class="img-carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        hola
+    </main>
+    <footer>
+        <p>© 2026 Mercado Libre</p>
+    </footer>
+</body>
 </html>
