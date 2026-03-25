@@ -1,0 +1,121 @@
+.cont-prod {
+    display: flex;
+    gap: 40px;
+    padding: 40px 80px;
+    background-color: white;
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 8px;
+}
+
+/*galeria*/
+.galeria-prod {
+    flex: 1;
+}
+
+.img-principal-prod {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border: 1px solid #eee;
+}
+
+.miniaturas-prod {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.miniaturas-prod img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/*info producto*/
+.info-prod {
+    flex: 1;
+}
+
+.condicion-prod {
+    font-size: 14px;
+    color: gray;
+}
+
+.titulo-prod {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.precio-cont {
+    margin: 15px 0;
+}
+
+.precio-anterior-prod {
+    text-decoration: line-through;
+    color: gray;
+    display: block;
+}
+
+.precio-prod {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.descuento-prod {
+    color: green;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.meses-prod {
+    font-size: 14px;
+    color: gray;
+}
+
+.envio-prod {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.envio-prod span {
+    font-weight: normal;
+}
+
+/*botones*/
+.btn-comprar-prod {
+    width: 100%;
+    padding: 12px;
+    background-color: #3483fa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-carrito-prod {
+    width: 100%;
+    padding: 12px;
+    background-color: #3483fa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*descripcion*/
+.desc-prod {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 20px 80px;
+    border-radius: 8px;
+}
+
+.desc-prod h2 {
+    margin-bottom: 10px;
+}

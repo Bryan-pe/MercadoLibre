@@ -5,54 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="icons/doodle_cat.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login_style.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <!--fila superior-->
-        <div class="header-top">
-            <div class="logos">
-                <a href="index.html"><img src="img/logo.png" alt="logo mercado libre"></a>
-            </div>
-            <div class="buscador">
-                <form>
-                    <input type="text" placeholder="Buscar productos, marcas y mas...">
-                    <button type="submit">
-                        <img src="icons/lupa.png" alt="buscador">
-                    </button>
-                </form>
-            </div>
-            <img src="img/meli.png" alt=" logo mercado libre" class="img-banner">
-        </div>
-        <!--barra de navegacion-->
-        <nav class="nav">
-            <ul class="menu-left">
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Cupones</a></li>
-                <li><a href="#">Supermercado</a></li>
-                <li><a href="#">Moda</a></li>
-                <li><a href="#">Mercado Play</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <ul class="menu-right">
-                <li><a href="registro.html">Crea tu cuenta</a></li>
-                <li><a href="#"></a>Ingresa</li>
-                <li><a href="#"></a>Mis compras</li>
-                <li>
-                    <a href="carrito.html">
-                        <img src="icons/carrito.png" class="img-carrito">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header-login">
+        <a href="index.html"><img src="img/logo.png" alt="logo mercado libre"></a>
     </header>
-    <main>
-        hola
+    <main class="login-cont">
+        <!--izquierda-->
+        <div class="login-info">
+            <h1>Ingresa tu email o telefono<br>para iniciar sesion</h1>
+            <div class="help-box">
+                <p>Tengo un problema de seguridad</p>
+            </div> 
+            <a href="#" class="help-link">Necesito ayuda</a>
+        </div>
+
+        <!--derecha-->
+        <div class="login-box">
+            <!--registro-->
+            <div id="registro" class="form-section">
+                <h2>Crear cuenta</h2>
+                <form>
+                    <label>Nombre</label>
+                    <input type="text">
+                    
+                    <label>Email</label>
+                    <input type="email">
+
+                    <label>Contraseña</label>
+                    <input type="password">
+
+                    <button type="submit" class="btn-primary">Registrarse</button>
+                </form>
+                <a href="#login" class="switch-link">Ya tengo cuenta</a>
+            </div>
+
+            <!--login-->
+            <div id="login" class="form-section">
+                <h2>Iniciar sesion</h2>
+                <form>
+                    <label>Email o telefono</label>
+                    <input type="text">
+
+                    <label>Contraseña</label>
+                    <input type="password">
+
+                    <button type="submit" class="btn-primary">Continuar</button>
+                </form>
+                <a href="#registro" class="switch-link">Crear cuenta</a>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>© 2026 Mercado Libre</p>
+    <footer class="footer-login">
+        <p>Como cuidamos tu privacidad - Copyright © 1999-2026</p>
     </footer>
 </body>
 </html>
