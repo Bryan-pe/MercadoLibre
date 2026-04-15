@@ -1,0 +1,127 @@
+.carr {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.carr::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #ebebeb);
+}
+
+.carr-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*dots*/
+.carr-btns {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #3483fa;
+}
+
+/*arrows*/
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 80px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    font-size: 30px;
+    color: #3483fa;
+        /*ocultas por defecto*/
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/*izquierda*/
+.arrow.left {
+    left: 0;
+    border-radius: 0 40px 40px 0;
+}
+
+/*derecha*/
+.arrow.right{
+    right: 0;
+    border-radius: 40px 0 0 40px;
+}
+
+/*mostrar al pasar el mouse*/
+.carr:hover .arrow {
+    opacity: 1;
+}
+
+/*efecto hover*/
+.arrow:hover {
+    background-color: white;
+}
+
+.hero {
+    position: relative;
+}
+
+/*cards*/
+.seccion-cards {
+    position: relative;
+    margin-top: -100px;
+    z-index: 3;
+    padding: 0 40px;
+}
+
+.cards-cont{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+width: 200px;
+background-color: #ffffff;
+border-radius: 8px;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+text-align: center;
+transition: transform 0.2s ease;
+}
