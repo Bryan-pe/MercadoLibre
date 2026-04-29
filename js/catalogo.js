@@ -11,7 +11,7 @@ const prods = [
         envio: "llega gratis mañana",
         sold: 120,
         location: "cdmx",
-        img: "img/p1.pnj"
+        img: "img/red1.jpg"
     },
     {
         id: 2,
