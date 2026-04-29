@@ -6,6 +6,7 @@
     <link rel="icon" href="icons/doodle_cat.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/shop_style.css">
+    <link rel="stylesheet" href="css/carrito.css">
     <title>Document</title>
 </head>
 <body>
@@ -41,41 +42,34 @@
                 <li><a href="registro.html">Crea tu cuenta</a></li>
                 <li><a href="#"></a>Ingresa</li>
                 <li><a href="#"></a>Mis compras</li>
-                <li>
+                <li class="carrito-icono">
                     <a href="carrito.html">
                         <img src="icons/carrito.png" class="img-carrito">
+                        <span id="contador-carrito" class="contador">0</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main class="shop-cont">
-        <!--lista de productos-->
-        <div class="prods-shop">
-            <h2>Productos</h2>
-            <div class="prod-shop">
-                <img src="img/red1.jpg">
-                <div class="info-shop">
-                    <h3>Redmagic 11 Air 5g</h3>
-                    <p class="precio-shop">$13,476</p>
-                    <div class="cantidad-shop">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
+    <main class="carrito-container">
+        <!--izquierda-->
+        <div class="carrito-lista">
+            <div class="carrito-header">
+                <h2>Productos</h2>
+                <span class="full">FULL</span>
+            </div>
+            <div id="lista-carrito"></div>
+            <div class="envio-box">
+                <p><strong>Envio</strong></p>
+                <p class="gratis">Envio gratis</p>
             </div>
         </div>
 
-        <!--resumen-->
-        <div class="resumen-shop">
-            <h3>Resumen de compra</h3>
-            <p>Producto: $13,476</p>
-            <p>Envio: Gratis</p>
-            <h2>Total: $13,476</h2>
-            <button>Continuar compra</button>
-        </div>
+        <!--derecha-->
+        <div class="carrito-resumen" id="resumen"></div>
+
     </main>
+    <script src="js/carrito.js"></script>
     <footer>
         <p>© 2026 Mercado Libre</p>
     </footer>
