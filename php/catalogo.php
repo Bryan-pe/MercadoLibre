@@ -1,6 +1,6 @@
 <?php
     include("conexion.php");
-    $query = "SELECT * FROM productos WHERE id = $id";
+    $query = "SELECT * FROM productos";
     $resul = $db->query($query);
 ?>
 <!DOCTYPE html>
@@ -34,7 +34,7 @@
         <!--barra de navegacion-->
         <nav class="nav">
             <ul class="menu-left">
-                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="catalogo.php">Catalogo</a></li>
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Cupones</a></li>
                 <li><a href="#">Supermercado</a></li>
