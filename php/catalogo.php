@@ -115,10 +115,10 @@
                             <img src="<?php echo $prod['imagen']; ?>">
                             <p class="titulo"><?php echo $prod['titulo']; ?></p>
                             <?php if($prod['precio_ant']){ ?>
-                            <p class="precio-anterior">$<?php echo number_format($prod['precio_ant']); ?></p>
+                            <p class="precio-anterior">$<?php echo $prod['precio_ant']; ?></p>
                             <?php } ?>
                             <p class="precio">
-                                $<?php echo number_format($prod['precio']); ?>
+                                $<?php echo $prod['precio']; ?>
                                 <span><?php echo $prod['descuento']; ?></span>
                             </p>
                             <p class="meses"><?php echo $prod['meses']; ?></p>

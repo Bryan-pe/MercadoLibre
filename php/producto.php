@@ -65,9 +65,9 @@
         <div class="info-producto">
             <!--<p class="condicion">Nuevo | ${producto.sold} vendidos</p>-->
             <h1 class="titulo"><?php echo $prod['titulo']; ?></h1>
-            <p class="precio-anterior"><?php echo number_format($prod['precio_ant']); ?></p>
+            <p class="precio-anterior"><?php echo $prod['precio_ant']; ?></p>
             <p class="precio">
-                <?php echo number_format($prod['precio']); ?>
+                <?php echo $prod['precio']; ?>
                 <span class="descuento"><?php echo $prod['descuento']; ?></span>
             </p>
             <p class="meses"><?php echo $prod['meses']; ?></p>
