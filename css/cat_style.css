@@ -89,6 +89,10 @@
     gap: 20px;
 }
 
+.producto-link {
+    text-decoration: none;
+}
+
 /*producto*/
 .prod-cat {
     background: #fff;

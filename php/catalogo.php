@@ -108,21 +108,21 @@
                 </div>-->
 
                 <!--grid-->
-                <div class="productos-grid">
+                <div class="prods-grid-cat">
                     <?php while($prod = $resul->fetchArray()){ ?>
                     <a href="producto.php?id=<?php echo $prod['id']; ?>" class="producto-link">
-                        <div class="producto">
+                        <div class="prod-cat">
                             <img src="<?php echo $prod['imagen']; ?>">
-                            <p class="titulo"><?php echo $prod['titulo']; ?></p>
+                            <p class="titulo-cat"><?php echo $prod['titulo']; ?></p>
                             <?php if($prod['precio_ant']){ ?>
-                            <p class="precio-anterior">$<?php echo $prod['precio_ant']; ?></p>
+                            <p class="precio-anterior-cat">$<?php echo $prod['precio_ant']; ?></p>
                             <?php } ?>
-                            <p class="precio">
+                            <p class="precio-cat">
                                 $<?php echo $prod['precio']; ?>
                                 <span><?php echo $prod['descuento']; ?></span>
                             </p>
-                            <p class="meses"><?php echo $prod['meses']; ?></p>
-                            <p class="envio"><?php echo $prod['envio']; ?></p>
+                            <p class="meses-cat"><?php echo $prod['meses']; ?></p>
+                            <p class="envio-cat"><?php echo $prod['envio']; ?></p>
                             <!--<p class="vendidos">$${p.sold} vendidos</p>-->
                             <button class="btn-agregar">
                                 Agregar al carrito
